@@ -1,5 +1,4 @@
 """JUST-L app の UI"""
-from pathlib import Path
 
 import streamlit as st
 from generate import generate_input
@@ -17,13 +16,8 @@ st.title("JUST-L Visualizer")
 st.subheader("情報数理学演習I 2024年度 最終課題")
 st.write("---")
 
-path_to_in = Path("../../examples/ex1/in1.txt")
-with open(path_to_in) as f:
-    lines_in = f.readlines()
-
-path_to_out = Path("../../examples/ex1/out1-1.txt")
-with open(path_to_out) as f:
-    lines_out = f.readlines()
+lines_in = ["6 8 5\n", "J 3 2\n", "T 2 5\n", "U 3 6\n", "S 5 2\n", "L 5 6\n"]
+lines_out = ["Yes\n", "5\n", "J 2 2 1\n", "U 2 7 2\n", "S 5 2 1\n", "T 2 4 2\n", "L 4 5 1\n"]
 
 col1, vline, col2 = st.columns([10.9, 0.2, 10.9])
 
