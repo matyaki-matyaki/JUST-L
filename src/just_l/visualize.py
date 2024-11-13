@@ -1,12 +1,11 @@
 """盤面の可視化（入力と出力結果の両方）"""
 
 import numpy as np
+from const import BLOCK_SHAPE_DICT, COLOR_DICT
 from matplotlib import patches
 from matplotlib import pyplot as plt
 from matplotlib.axes import Axes
 from matplotlib.figure import Figure
-
-from just_l.const import BLOCK_SHAPE_DICT, COLOR_DICT
 
 
 def visualize_input(lines_in: list[str]) -> tuple[Figure, Axes]:

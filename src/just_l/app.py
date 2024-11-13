@@ -2,9 +2,8 @@
 from pathlib import Path
 
 import streamlit as st
-
-from just_l.generate import generate_input
-from just_l.visualize import visualize_input, visualize_output
+from generate import generate_input
+from visualize import visualize_input, visualize_output
 
 st.set_page_config(
     page_title="JUST-L",
@@ -18,11 +17,11 @@ st.title("JUST-L Visualizer")
 st.subheader("情報数理学演習I 2024年度 最終課題")
 st.write("---")
 
-path_to_in = Path("examples/ex1/in1.txt")
+path_to_in = Path("../../examples/ex1/in1.txt")
 with open(path_to_in) as f:
     lines_in = f.readlines()
 
-path_to_out = Path("examples/ex1/out1-1.txt")
+path_to_out = Path("../../examples/ex1/out1-1.txt")
 with open(path_to_out) as f:
     lines_out = f.readlines()
 

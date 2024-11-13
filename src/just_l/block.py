@@ -1,10 +1,9 @@
 """J, U, S, T, Lのブロックを回転と共に図示する"""
 
 import numpy as np
+from const import BLOCK_SHAPE_DICT, COLOR_DICT
 from matplotlib import pyplot as plt
 from matplotlib.colors import ListedColormap
-
-from just_l.const import BLOCK_SHAPE_DICT, COLOR_DICT
 
 fig, axes = plt.subplots(5, 4, figsize=(16, 20), dpi=200)
 
