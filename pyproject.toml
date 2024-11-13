@@ -3,7 +3,7 @@ name = "just-l"
 version = "0.1.0"
 description = "Add your description here"
 authors = [
-    { name = "matyaki-matyaki", email = "mtakaha9xf8@gmail.com" }
+    { name = "matyaki-matyaki" }
 ]
 dependencies = [
     "mypy>=1.13.0",
